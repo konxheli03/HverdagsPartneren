@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HverdagsPartner – En partner i hverdagen</title>
+  <meta name="description" content="HverdagsPartner kobler folk som trenger hjelp i hverdagen med hjelpsomme naboer. Renhold, snømåking, gressklipp, småflytting og mer.">
+  <link rel="icon" href="/assets/logo.svg">
+  <style>
+    :root { --max: 1040px; --brandA:#1e40af; --brandB:#0ea5e9; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;color:var(--ink);background:#f8fafc}
+    header{background:linear-gradient(135deg,var(--brandA),var(--brandB));color:#fff;padding:72px 20px 56px}
+    .wrap{max-width:var(--max);margin:0 auto}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:.3px}
+    .brand img{width:32px;height:32px}
+    h1{font-size:42px;margin:16px 0 6px;line-height:1.12}
+    p.lead{font-size:18px;opacity:.95;margin:0 0 22px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+    a.btn{display:inline-block;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700}
+    .primary{background:#fff;color:var(--ink)}
+    .ghost{border:2px solid rgba(255,255,255,.9);color:#fff}
+    section{padding:44px 20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:#fff;padding:18px;border-radius:14px;border:1px solid var(--line);box-shadow:0 1px 2px rgba(0,0,0,.02)}
+    h2{margin:0 0 14px;font-size:26px}
+    h3{margin:10px 0;font-size:18px}
+    ul{margin:0;padding-left:18px}
+    .pill{display:inline-block;background:#e2e8f0;color:var(--ink);padding:6px 10px;border-radius:999px;font-weight:600;font-size:12px}
+    .two{display:grid;grid-template-columns:1fr;gap:16px}
+    @media (min-width: 860px){ .two{grid-template-columns:1fr 1fr} }
+    footer{padding:28px 20px;border-top:1px solid var(--line);color:var(--muted);background:#fff}
+    footer a{color:var(--brandA);text-decoration:none}
+    nav.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+    nav.top a{color:#fff;text-decoration:none;opacity:.95;margin-left:14px}
+    .pricing .price{font-size:28px;font-weight:800}
+    .legal{font-size:12px;color:var(--muted)}
+    .notice{background:#fff3;border:1px solid #fff6;padding:10px;border-radius:10px;max-width:780px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav class="top">
+        <div class="brand"><img src="/assets/logo.svg" alt="HverdagsPartner logo"> HverdagsPartner</div>
+        <div class="links">
+          <a href="#tjenester">Tjenester</a>
+          <a href="#book">Bestill</a>
+          <a href="#helper">Bli hjelper</a>
+        </div>
+      </nav>
+      <h1>En partner i hverdagen</h1>
+      <p class="lead">Vi kobler deg som trenger hjelp med en hjelpsom nabo – renhold, snømåking, hage og småflytting.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#book">Bestill hjelp</a>
+        <a class="btn ghost" href="#helper">Bli hjelper</a>
+      </div>
+      <div class="notice" style="margin-top:14px">
+        Foreløpig MVP – bestilling og registrering skjer via skjema. Plattformbetaling og app kommer senere.
+      </div>
+    </div>
+  </header>
+
+  <section id="tjenester">
+    <div class="wrap">
+      <div class="grid">
+        <div class="card">
+          <h3>Renhold & rydding</h3>
+          <p>Støvsuging, gulvvask, kjøkken/bad, flyttevask. <span class="pill">Fra 250 kr/t</span></p>
+        </div>
+        <div class="card">
+          <h3>Snømåking & strøing</h3>
+          <p>Innkjørsel, trapper, gangvei. <span class="pill">Fastpris / gang</span></p>
+        </div>
+        <div class="card">
+          <h3>Hage & ute</h3>
+          <p>Gressklipp, løv, enkel kvist. <span class="pill">Fra 250 kr/t</span></p>
+        </div>
+        <div class="card">
+          <h3>Småflytting & bæring</h3>
+          <p>Eske-bæring, småting i nærmiljø, bærehjelp ved leiebil. <span class="pill">Pakkepris</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="wrap two">
+      <div class="card">
+        <h2>Bestill hjelp</h2>
+        <p>Fyll inn skjema – vi matcher deg med en hjelper i nærheten.</p>
+        <ol>
+          <li>Beskriv oppdraget (sted, tidspunkt, hva som trengs)</li>
+          <li>Få forslag og pris</li>
+          <li>Betal trygt ved oppmøte eller via Vipps</li>
+        </ol>
+        <p>
+          <a class="btn primary" href="REPLACE_WITH_YOUR_GOOGLE_FORM_FOR_CUSTOMERS" target="_blank" rel="noopener">Åpne bestillingsskjema</a>
+        </p>
+        <p class="legal">Tips: Lag et gratis Google Forms-skjema og lim inn lenken her. Alle svar havner i Google Sheets.</p>
+      </div>
+      <div class="card" id="helper">
+        <h2>Bli hjelper</h2>
+        <p>Vil du tjene litt ekstra? Sett opp profil med hva du kan hjelpe med og når du er ledig.</p>
+        <ul>
+          <li>Velg oppdrag du vil ta</li>
+          <li>Tjen penger i nabolaget</li>
+          <li>Utbetaling til konto / Vipps</li>
+        </ul>
+        <p>
+          <a class="btn ghost" href="REPLACE_WITH_YOUR_GOOGLE_FORM_FOR_HELPERS" target="_blank" rel="noopener">Registrer deg</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <div class="wrap">
+      <h2>Enkel og ærlig prising</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Intropakker (første 2 mnd)</h3>
+          <p><span class="price">Fra 220 kr/t</span><br>Lavere startpris for å bli kjent.</p>
+        </div>
+        <div class="card">
+          <h3>Standard</h3>
+          <p><span class="price">250–300 kr/t</span><br>Klare, faste priser – avtales på forhånd.</p>
+        </div>
+        <div class="card">
+          <h3>Snømåking</h3>
+          <p><span class="price">Fastpris</span><br>+50–100 kr for strøing ved behov.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Ofte stilte spørsmål</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Hvordan betaler jeg?</h3>
+          <p>Vipps eller kort/bank etter avtale. Plattformbetaling kommer etter hvert.</p>
+        </div>
+        <div class="card">
+          <h3>Hvem kan bli hjelper?</h3>
+          <p>18+ anbefales. Junior 16–17 år kan vurderes for lette jobber med foresattes samtykke.</p>
+        </div>
+        <div class="card">
+          <h3>Er dere ansvarlige for skader?</h3>
+          <p>Hjelpere skal opptre aktsomt. Avtal tydelig oppdrag og “bruk på eget ansvar” for utstyr kunden stiller.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <strong>HverdagsPartner</strong> – En partner i hverdagen<br>
+      Kontakt: <a href="tel:+4700000000">+47 00 00 00 00</a> · <a href="mailto:post@hverdagspartner.no">post@hverdagspartner.no</a> · 
+      <a href="/privacy.html">Personvern</a> · <a href="/terms.html">Vilkår</a>
+      <div class="legal" style="margin-top:8px">
+        © <span id="y"></span> HverdagsPartner. Foreløpig MVP. <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
